@@ -5,8 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class PluralizePipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(count: number,singular: string,plural: string): string {
+    return `${count} ${count == 1 ? singular:plural}`;
   }
 
 }

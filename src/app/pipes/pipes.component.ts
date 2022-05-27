@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PipesComponent implements OnInit {
 
-  count=0;
+  count=1;
   constructor() { }
 
   ngOnInit(): void {
