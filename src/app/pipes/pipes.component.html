@@ -1,0 +1,9 @@
+<input [(ngModel)]="count" type="number"/>
+
+<div>
+  {{count | relativeTime}}
+</div>
+
+<div>
+  {{count | pluralize:"second" : "seconds"}}
+</div>
