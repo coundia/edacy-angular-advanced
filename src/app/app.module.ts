@@ -8,6 +8,7 @@ import { PluralizePipe } from './pipes/pluralize.pipe';
 import { RelativeTimePipe } from './pipes/relative-time.pipe';
 import { HeaderComponent } from './header/header.component';
 import {FormsModule} from "@angular/forms";
+import { ValidatorTestComponent } from './validator-test/validator-test.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {FormsModule} from "@angular/forms";
     PipesComponent,
     PluralizePipe,
     RelativeTimePipe,
-    HeaderComponent
+    HeaderComponent,
+    ValidatorTestComponent
   ],
     imports: [
         BrowserModule,

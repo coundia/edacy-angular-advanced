@@ -9,3 +9,9 @@
     ng g pipe pipes/relative-time
 
 [https://angular.io/guide/pipes](https://angular.io/guide/pipes)
+
+# validators
+
+    ng g c validators/validator-test 
+    ng g service validators/validation 
+  
