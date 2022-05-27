@@ -1,9 +1,11 @@
-<input [(ngModel)]="count" type="number"/>
+<div class="row mt-2">
+  <input class="form-control" [(ngModel)]="count" type="number"/>
+</div>
 
-<div>
+<div class="row mt-2">
   {{count | relativeTime}}
 </div>
 
-<div>
+<div class="row mt-2">
   {{count | pluralize:"second" : "seconds"}}
 </div>
