@@ -1,0 +1,37 @@
+<div class="row">
+  <form class="was-validated" [formGroup]="loginForm" *ngIf="!submitted" (ngSubmit)="login()">
+    <div class="col-md-4 mb-3">
+      <label for="password">Mot de passe</label>
+      <input formControlName="password" type="text" class="form-control is-valid" id="password">
+      <!--  <div class="valid-feedback">
+          OK !
+        </div>-->
+      <div *ngIf="(password?.dirty || password?.touched) && password?.invalid" class="invalid-feedback">
+      <span *ngIf="password?.errors?.required">
+          Ce champs est obligatoire.
+      </span>
+        <span>
+          errors
+        </span>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="confirmPassword">Confirmation mot de passe </label>
+      <input formControlName="confirmPassword" type="text" class="form-control is-valid" id="confirmPassword" required>
+     <!-- <div class="valid-feedback">
+        OK !
+      </div>-->
+
+    </div>
+    <div>
+      <button class="btn   btn-primary" type="submit">
+        Se connecter
+      </button>
+    </div>
+  </form>
+</div>
+<div class="row" *ngIf="submitted">
+  <div class="alert alert-success">
+    Vous etes connecté !
+  </div>
+</div>

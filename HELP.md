@@ -12,6 +12,22 @@
 
 # validators
 
-    ng g c validators/validator-test 
+    ng g c  validators 
     ng g service validators/validation 
-  
+
+# Angulars Forms 
+
+    - Formulaires pilote par le templates (template-driven forms)
+      - directives (two way data binding) : ngModel
+      - pros/cons 
+          -Pas evolutifs
+          -Pas reutilisables 
+          -Pas faciles a tester 
+          -Syntaxes simple avec le two way binding
+     - Formulaires reactifs pilote par code (templates-driven forms)
+      - directives :  formControlName
+      - pros/cons 
+          -Plus evolutifs
+          -Plus reutilisables 
+          -Plus faciles a tester 
+          -Syntaxes plus Complexe  

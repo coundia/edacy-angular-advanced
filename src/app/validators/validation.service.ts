@@ -16,5 +16,4 @@ export class ValidationService {
   validatePassword(password: string):Observable<boolean> {
     return timer(5000).pipe(mapTo(password == 'aaAA11!!'))
   }
-
 }

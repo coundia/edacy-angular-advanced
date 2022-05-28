@@ -7,8 +7,11 @@ import { PipesComponent } from './pipes/pipes.component';
 import { PluralizePipe } from './pipes/pluralize.pipe';
 import { RelativeTimePipe } from './pipes/relative-time.pipe';
 import { HeaderComponent } from './header/header.component';
-import {FormsModule} from "@angular/forms";
-import { ValidatorTestComponent } from './validator-test/validator-test.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { ValidatorsComponent } from './validators/validators.component';
+import { FormTemplateComponent } from './forms/form-template/form-template.component';
+import { FormReativeComponent } from './forms/form-reative/form-reative.component';
+
 
 @NgModule({
   declarations: [
@@ -17,11 +20,14 @@ import { ValidatorTestComponent } from './validator-test/validator-test.componen
     PluralizePipe,
     RelativeTimePipe,
     HeaderComponent,
-    ValidatorTestComponent
+    ValidatorsComponent,
+    FormTemplateComponent,
+    FormReativeComponent
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
+        ReactiveFormsModule,
         FormsModule
     ],
   providers: [],

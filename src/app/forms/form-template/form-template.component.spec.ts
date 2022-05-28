@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ValidatorTestComponent } from './validator-test.component';
+import { FormTemplateComponent } from './form-template.component';
 
-describe('ValidatorTestComponent', () => {
-  let component: ValidatorTestComponent;
-  let fixture: ComponentFixture<ValidatorTestComponent>;
+describe('FormTemplateComponent', () => {
+  let component: FormTemplateComponent;
+  let fixture: ComponentFixture<FormTemplateComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ValidatorTestComponent ]
+      declarations: [ FormTemplateComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ValidatorTestComponent);
+    fixture = TestBed.createComponent(FormTemplateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
