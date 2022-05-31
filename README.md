@@ -19,6 +19,5 @@
 │   └── environments            # Dossiers contenants les configurations de environnements 
 ├── package.json                # Fichier contenant les dépendances  du projet
 ├── HELP.md                     # Fichier contenant  le guide pour les développeurs
-├── README.md                   # Fichier contenant la documentation du projet
 └── README.md                   # Fichier contenant la documentation du projet
 </pre>
